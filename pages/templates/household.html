@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% load bootstrap4 %}
+    <h1>Details page for household with id: {{ houseHoldId }}</h1>
+
+
+    <div>
+       <iframe
+            style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+            width="1000"
+            height="750"
+            src="https://charts.mongodb.com/charts-project-0-flxvn/embed/charts?id={{ chartId }}&autorefresh=300&theme=light">
+    </iframe>
+    </div>
+
+    <div>
+        <a class="btn btn-success" href="{% url 'home' %}">Go back to home</a>
+
+    </div>
+
+</body>
+</html>

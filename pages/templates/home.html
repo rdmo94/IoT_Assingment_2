@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+</head>
+<body>
+    <h1>Home page</h1>
+    <div>
+        <a href="{% url 'household' houseHoldId=0 %}">Go to household 1</a>
+    </div>
+    <div>
+        <a href="{% url 'household' houseHoldId=1 %}">Go to household 2</a>
+    </div>
+    <div>
+        <a href="{% url 'household' houseHoldId=2 %}">Go to household 3</a>
+    </div>
+    <div>
+        <a href="{% url 'household' houseHoldId=3 %}">Go to household 4</a>
+    </div>
+
+    <div>
+        <a href="{% url 'admin' %}">Go to administration page</a>
+    </div>
+    <div>
+        <a href="{% url 'supplier' %}">Go to supplier page</a>
+    </div>
+
+</body>
+</html>

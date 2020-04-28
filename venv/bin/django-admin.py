@@ -1,4 +1,4 @@
-#!/Users/rdmo/Desktop/Django/assignment2/venv/bin/python
+#!/Users/admin/OneDrive/Dokumenter/ITU/Dokumenter/CS2/IOT/IoT_Assingment_2/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

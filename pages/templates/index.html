@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+ <p> this is the index page :)</p>
+{% if user.is_authenticated %}
+ <p>
+    username: {{ user.username }}
+    meterID: {{ user.meterID }}
+</p>
+    {% else %}
+<p>you are not logged in</p>
+ {% endif %}
+</body>
+</html>
+{% endblock %}

@@ -1,11 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chart for {{ houseHoldId }}</title>
 </head>
 <body>
-    {% load bootstrap4 %}
     <h1>Details page for household with id: {{ houseHoldId }}</h1>
 
 
@@ -25,3 +26,4 @@
 
 </body>
 </html>
+{% endblock %}

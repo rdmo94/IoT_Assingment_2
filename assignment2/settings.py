@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from IoT_Assingment_2 import pages
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -25,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8pre4tft#_k3o)o$_&_c!k&4-dk@ag@v#p4@a@0_^we&c-x30!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -33,13 +31,14 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'pages',
+    'account',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +69,8 @@ TEMPLATES = [
 
     },
 ]
+
+AUTH_USER_MODEL = 'account.Account'
 
 TEMPLATES_DIR = (
                     os.path.join(BASE_DIR, "pages/templates/"),
@@ -126,3 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login'
+
+#AUTH_USER_MODEL = 'pages.user' #using custom user model

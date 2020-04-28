@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/rdmo/Desktop/Django/assignment2/venv"
+VIRTUAL_ENV="/Users/admin/OneDrive/Dokumenter/ITU/Dokumenter/CS2/IOT/IoT_Assingment_2/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
